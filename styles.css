@@ -1,0 +1,46 @@
+html, body {
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.left-panel {
+    background-image: url(imgs/beach.jpeg);
+    background-size: cover;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: #ffffff;
+}
+.left-panel img {
+    width: 4rem;
+}
+
+.left-panel p {
+    font-family: 'Caveat', cursive;
+    font-size: 0.8rem;
+    align-self: center;
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff7a;
+}
+
+.right-panel {
+    height: 100vh;
+    width: 60vw;
+}
