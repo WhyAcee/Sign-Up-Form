@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DotGothic16&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DotGothic16&family=Roboto+Slab&display=swap');
       </style>
 </head>
 <body>
@@ -17,15 +18,57 @@
                 <img src="/imgs/odin-lined.png">
                 <h1>LavishLiving</h1>
             </div>
-            <p>Photo by William Justen on unsplash</p>
+            <p>Photo by <a href="https://unsplash.com/@willianjusten">William Justen</a> on <a href="https://unsplash.com/photos/U3jZSuf6OX8">unsplash</a></p>
         </div>
         <div class="right-panel">
-            <p class="text-content">
-                This is not a real online service! You know you need 
-                something like this in your life to help you realize you
-                want to Live Lavish.
-            </p>
-        </div>
+            <div class="right-header">
+                <p class="text-content">
+                    <b>This is not a real online service!  You know you need 
+                    something like this in your life to help you realize you
+                    want to Live Lavish.<br><br> You know you want to.</b>
+                </p>
+            </div>
+            <div class="inputs">
+                <h3>Lets do this!</h3>
+                <form action="#">
+                    <div class="form-container">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="John" required>
+                    </div>
+                    
+                    <div class="form-container">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+                    </div>
+
+                    <div class="form-container">
+                        <label for="user_email">Email</label>
+                        <input type="email" name="user_email" id="user_email" placeholder="johndoe@example.com" required>
+                    </div>
+
+                    <div class="form-container">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="416-xxx-xxxx" required pattern="[0-9]{10}">
+                    </div>
+
+                    <div class="form-container">
+                        <label for="user_password">Password</label>
+                        <input type="password" name="user_password" id="user_password" placeholder="Minimum 8 letters" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                 
+                    </div>
+
+                    <div class="form-container">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Re-confirm Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                    </div>
+                
+            </div>
+            <div class="submit">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div>
+             </form>
+        </div> 
     </div>
 </body>
 </html>

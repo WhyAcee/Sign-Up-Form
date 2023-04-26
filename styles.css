@@ -2,6 +2,7 @@ html, body {
     font-size: 1.2rem;
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .main {
@@ -13,7 +14,7 @@ html, body {
 .left-panel {
     background-image: url(imgs/beach.jpeg);
     background-size: cover;
-    width: 60vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,14 +34,98 @@ html, body {
 
 .left-panel p {
     font-family: 'Caveat', cursive;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     align-self: center;
     position: absolute;
     bottom: 0px;
     color: #ffffff7a;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .right-panel {
     height: 100vh;
     width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 241, 243);
+}
+
+.text-content {
+    padding: 5% 15% 5% 5%;
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs {
+    padding: 45px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 4px grey;
+}
+
+.inputs h3 {
+    margin-top: 0px;
+    font-family: 'Caveat', cursive;
+}
+
+.inputs p {
+    margin-top: 0px;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    height: 1.2rem;
+    width: 15rem;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border-color: red;
+}
+
+label {
+    width: 15rem;
+}
+
+.submit {
+    margin: 30px 50px
+}
+
+.submit button {
+    border: 1px solid #596d48;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: #596d48;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.submit button:hover {
+    background-color: #495a3b;
+    border-color: #495a3b;
+}
+
+.submit p {
+    font-size: 0.8rem;
+}
+
+a:link {
+    text-decoration: none;
+    text-shadow: none;
 }
